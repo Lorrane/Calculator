@@ -22,31 +22,36 @@ main {
 }
 
 .display {
-  width: 200px;
+  width: 100%;
   filter: drop-shadow(0 0 1px #3a3a3a);
   font-size: 18px;
   border-radius: 5px;
+  padding: 8px;
 }
 
 .buttons {
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+  font-size: 1.2em;
 }
 
 button {
   font-size: 18px;
-  padding: 2px;
-  margin: 2px;
-  min-width: 30px;
+  padding: 8px;
   background-color: #cac9c9;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button.span2 {
   grid-column: span 2;
+}
+
+button.primary {
+  background-color: #8f8f8f;
+  color: #ececec;
 }
 
 button:active {
